@@ -1,7 +1,7 @@
-# QR-DQN — distributional RL experiments alongside my Bachelor's thesis
+# QR-DQN — distributional RL experiments
 
-> Thesis-adjacent personal project developed during my Bachelor's thesis work in Spring 2024.  
-> This repository captures my experiments with distributional reinforcement learning while exploring QR-DQN in parallel with the thesis work.
+> Personal project developed during my Bachelor's thesis work in Spring 2024.  
+> This repository captures my experiments with distributional reinforcement learning while exploring QR-DQN in parallel with my thesis work.
 
 QR-DQN (Quantile Regression Deep Q-Network) is a distributional reinforcement learning algorithm that models the full return distribution instead of estimating a single expected Q-value. Distributional RL is particularly interesting because it tracks uncertainty in returns rather than only their mean, giving richer learning signals and often more stable training dynamics in complex decision tasks.
 
