@@ -1,19 +1,19 @@
-# QR-DQN — personal experiments in Distributional RL
+# QR-DQN — distributional RL experiments alongside my Bachelor's thesis
 
-> Personal learning project — not an official Bachelor thesis.  
-> Implementations and experiments done on the side to learn distributional reinforcement learning.
+> Thesis-adjacent personal project developed during my Bachelor's thesis work in Spring 2024.  
+> This repository captures my experiments with distributional reinforcement learning while exploring QR-DQN in parallel with the thesis work.
 
-QR-DQN (Quantile Regression Deep Q-Network) is a distributional reinforcement learning algorithm that models the full return distribution instead of estimating a single expected Q-value. Distributional RL is a modern paradigm that often provides more stable learning and richer signals for exploration and risk-sensitive control.
+QR-DQN (Quantile Regression Deep Q-Network) is a distributional reinforcement learning algorithm that models the full return distribution instead of estimating a single expected Q-value. Distributional RL is particularly interesting because it tracks uncertainty in returns rather than only their mean, giving richer learning signals and often more stable training dynamics in complex decision tasks.
 
-This repository contains a compact implementation and experiments using QR-DQN. The long-term goal is to train agents on Atari 2600 games, but the code in this repo is currently exercised on the simpler CartPole environment for learning and debugging.
+This repository contains a compact implementation and experiments using QR-DQN. The long-term goal is to train agents on Atari 2600 games, but the code in this repo is currently exercised on simpler environments as part of my learning and thesis-related exploration.
 
 ## Highlights
 - Small, self-contained QR-DQN implementation for learning and evaluation.
 - Training/evaluation scripts and basic logging/plots for debugging.
-- Intended as a learning resource — straightforward and easy to read, not production-ready.
+- Intended as a learning resource and thesis-adjacent experimental codebase — straightforward and easy to read, not production-ready.
 
 ## What is Distributional RL (short)
-Traditional RL methods estimate the expected return. Distributional RL models the distribution of returns (random variable over future discounted rewards). QR-DQN approximates that distribution by learning a set of quantiles and using quantile regression to update them. See Dabney et al., 2018 for the original paper: "Distributional Reinforcement Learning with Quantile Regression."
+Traditional RL methods estimate the expected return. Distributional RL models the distribution of returns (random variable over future discounted rewards). QR-DQN approximates that distribution by learning a set of quantiles rather than one scalar estimate for each action.
 
 ## Structure (example)
 - `train.py` — training loop (example name; adapt to your repo layout)
